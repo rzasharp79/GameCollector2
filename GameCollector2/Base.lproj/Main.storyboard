@@ -56,6 +56,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vA-CA-PXV">
                                 <rect key="frame" x="172" y="374" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="8jx-e9-o2J" eventType="touchUpInside" id="SaJ-gk-5nw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,10 +75,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="wWw-6e-DYw">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="Oe7-Xj-SIC"/>
-                            <barButtonItem title="Photos" id="Opx-gl-kxK"/>
+                            <barButtonItem systemItem="camera" id="Oe7-Xj-SIC">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="8jx-e9-o2J" id="fB1-J5-RWV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="Opx-gl-kxK">
+                                <connections>
+                                    <action selector="photosTapped:" destination="8jx-e9-o2J" id="F6P-JY-KeV"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gameImageView" destination="P2K-MH-qin" id="3mc-w0-0ef"/>
+                        <outlet property="titleTextField" destination="9L3-vk-eBf" id="J49-9Y-czn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiN-4T-hh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
