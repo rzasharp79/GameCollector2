@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="1348" y="-37"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="UoD-jd-Awg">
             <objects>
                 <viewController id="8jx-e9-o2J" sceneMemberID="viewController">
@@ -41,6 +41,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cvi-ra-1VD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="wWw-6e-DYw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiN-4T-hh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
