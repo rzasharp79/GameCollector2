@@ -22,7 +22,6 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func photosTapped(_ sender: Any) {
-        print("photo button tapped")
         
         imagePicker.sourceType = .photoLibrary
         
@@ -38,11 +37,16 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
-        print("camera button tapped")
+        
     }
     
     @IBAction func addTapped(_ sender: Any) {
-        print("add button tapped")
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let game = Game(context: context)
+        game.title = titleTextField.text!
+        game.image = UIImagePNGRepresentation(gameImageView.image!)
     }
     
 }
